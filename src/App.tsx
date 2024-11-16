@@ -1,4 +1,6 @@
 import { Box } from "@mui/material";
+import { Navbar } from "./components/Navbar";
+import { AboutMe } from "./components/AboutMe";
 
 const styles = {
   background: "blue",
@@ -7,7 +9,12 @@ const styles = {
 };
 
 const App = () => {
-  return <Box sx={styles}>My Portfolio</Box>;
+  return (
+    <Box sx={styles}>
+      <Navbar />
+      <AboutMe />
+    </Box>
+  );
 };
 
 export default App;
